@@ -3,7 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HW1_HTML</title>
+    <style>
+      table,
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        text-align: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body style="text-align: left;">
+    <header>
+      <h1 style="text-align: center;">Header</h1>
+    </header>
+    <main>
+      <table style="margin: 0 auto;">
+        <caption>
+          Gem minings
+        </caption>
+        <thead>
+          <tr>
+            <th></th>
+            <th>2010</th>
+            <th>2012</th>
+            <th>2014</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sapphires</td>
+            <td rowspan="2">4532</td>
+            <td>4532</td>
+            <td>6743</td>
+          </tr>
+          <tr>
+            <td>Rubines</td>
+            <td>3835</td>
+            <td>7482</td>
+          </tr>
+          <tr>
+            <td>Almazes</td>
+            <td>683</td>
+            <td colspan="2">238</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div id="list"></div>
+      <div id="form"></div>
+    </main>
+    <footer><h1 style="text-align: center;">Footer</h1></footer>
+  </body>
 </html>
