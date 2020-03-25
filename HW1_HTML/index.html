@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW1_HTML</title>
-    <style>
-      table,
-      th,
-      td {
-        padding: 10px;
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-      td {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body style="text-align: left;">
-    <header>
-      <h1 style="text-align: center;">Header</h1>
-    </header>
-    <main>
-      <table style="margin: 0 auto;">
-        <caption>
-          Gem minings
-        </caption>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>HW1_HTML</title>
+</head>
+
+<body>
+  <header>
+    <h2>Header</h2>
+  </header>
+
+  <main>
+
+    <section class="table">
+      <table>
+        <caption>Добыча драгоценных камней</caption>
         <thead>
+          <h2>Table</h2>
           <tr>
             <th></th>
             <th>2010</th>
@@ -49,14 +42,58 @@
           <tr>
             <td>Almazes</td>
             <td>683</td>
-            <td colspan="2">238</td>
+            <td colspan="2" style="text-align: center;">238</td>
           </tr>
         </tbody>
       </table>
+    </section>
 
-      <div id="list"></div>
-      <div id="form"></div>
-    </main>
-    <footer><h1 style="text-align: center;">Footer</h1></footer>
-  </body>
+    <section class="list">
+      <h2>List</h2>
+      <h4>Первый список, начинается с 1</h4>
+      <ol start="1">
+        <li>Баал</li>
+        <li>Агарес</li>
+        <li>Марбас</li>
+        <li>Пруфлас</li>
+        <li>Аамон</li>
+      </ol>
+      <h4>Второй список, начинается с 6</h4>
+      <ol start="6">
+        <li>Барбатос</li>
+        <li>Буер</li>
+        <li>Гасион</li>
+        <li>Ботис</li>
+      </ol>
+    </section>
+
+    <section class="form">
+      <form action="/handling-log-in" method="POST">
+        <h3>Регистрация</h3>
+        <hr>
+        <div>
+          <ul>
+            <li class="email">
+              <label for="mail">E-mail</label><br>
+              <input type="email" id="mail" name="user_mail">
+            </li>
+            <li class="password">
+              <label for="password">Пароль</label><br>
+              <input type="password" id="password" name="user_password">
+            </li>
+            <li class="password-check">
+              <label for="password-confirm">Ещё раз</label><br>
+              <input type="password" id="password_confirm" name="user_password_confirm">
+            </li>
+          </ul>
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <h2>Footer</h2>
+  </footer>
+</body>
+
 </html>
