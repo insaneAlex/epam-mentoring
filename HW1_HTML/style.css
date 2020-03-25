@@ -1,0 +1,93 @@
+body {
+    font-family     : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin          : 0;
+    padding         : 0;
+    box-sizing      : border-box;
+    background-color: aliceblue;
+}
+
+table,
+th,
+td {
+    padding        : 10px;
+    border         : 1px solid black;
+    border-collapse: collapse;
+}
+
+.table table {
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+h1,
+h2,
+h4 {
+    text-align: center;
+}
+
+.list {
+    margin: 0 auto;
+    width : 300px;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    padding-left   : 70px;
+}
+
+form {
+    margin          : 50px auto;
+    width           : 400px;
+    border          : 1px solid gray;
+    background-color: #0099cc;
+    color           : aliceblue;
+}
+
+form div {
+    padding: 20px;
+}
+
+form h3 {
+    padding-left: 20px;
+}
+
+form ul {
+    list-style: none;
+    padding   : 0;
+    margin    : 0;
+}
+
+form button {
+    border          : 0;
+    background-color: #cccc00;
+    height          : 30px;
+    width           : 85px;
+}
+
+li.email {
+    padding-bottom: 20px;
+}
+
+.email input {
+    width : 350px;
+    margin: 0;
+}
+
+li.password,
+li.password-check {
+    display       : inline-block;
+    width         : 150px;
+    padding-bottom: 30px;
+}
+
+li.password {
+    padding-right: 43px;
+}
+
+footer {
+    border-top: 1px solid black;
+    text-align: center;
+}
