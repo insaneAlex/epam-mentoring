@@ -1,44 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <main>
-        <div class="cards wrapped-block">
-            <div class="card-order">1</div>
-            <div class="card-order">2</div>
-            <div class="card-order">3</div>
-            <div class="card-order">4</div>
-            <div class="card-order">5</div>
-            <div class="card-order">6</div>
-        </div>
+      <h2>Flex Layout 1</h2>
+      <div class="layout1 wrapped-block">
+        <div class="card-order">1</div>
+        <div class="card-order">2</div>
+        <div class="card-order">3</div>
+        <div class="card-order">4</div>
+        <div class="card-order">5</div>
+        <div class="card-order">6</div>
+      </div>
 
-        <div class="cards">
-            <div class="card cardq">1</div>
-            <div class="card">1</div>
-            <div class="card">1</div>
+      <div class="layout1">
+        <div class="card">1</div>
+        <div class="card">1</div>
+        <div class="card">1</div>
+      </div>
+
+      <div class="layout1">
+        <div class="card">1</div>
+        <div class="card card2">2</div>
+        <div class="card">1</div>
+      </div>
+      <hr />
+
+      <h2>Flex Layout 2</h2>
+      <div class="layout2 flex-start">
+        <div class="card">1</div>
+        <div class="card2">2</div>
+        <div class="card">3</div>
+      </div>
+
+      <div class="layout2 flex-end">
+        <div class="card">1</div>
+        <div class="card2">2</div>
+        <div class="card">3</div>
+      </div>
+
+      <div class="layout2 center">
+        <div class="card">1</div>
+        <div class="card2">2</div>
+        <div class="card">3</div>
+      </div>
+
+      <div class="layout2 space-between">
+        <div class="card">1</div>
+        <div class="card2">2</div>
+        <div class="card">3</div>
+      </div>
+
+      <div class="layout2 space-around">
+        <div class="card">1</div>
+        <div class="card2">2</div>
+        <div class="card">3</div>
+      </div>
+
+      <div class="layout2 space-evenly">
+        <div class="card">1</div>
+        <div class="card2">2</div>
+        <div class="card">3</div>
+      </div>
+
+      <hr />
+      <div class="layout3">
+        <h2>Flex layout 3</h2>
+        <div class="divTableRow">
+          <div class="divTableCell">asdadadadadadaadsdasds</div>
+          <div class="divTableCell">asdasaddasds</div>
+          <div class="divTableCell">asdaasdadadsdasds</div>
+          <div class="divTableCell">asdasdadasds</div>
+          <div class="divTableCell">asdasdasds</div>
+          <div class="divTableCell">asdasdasasdasdadds</div>
+          <div class="divTableCell">asdaadsddadadasds</div>
+          <div class="divTableCell">asdasdasds</div>
+          <div class="divTableCell">asdasdasds</div>
+          <div class="divTableCell">asdaadasdasds</div>
+          <div class="divTableCell">asdadadsdasds</div>
+          <div class="divTableCell">asddadasdasds</div>
         </div>
-        
-        <div class="cards">
-            <div class="card">1</div>
-            <div class="card card2">2</div>
-            <div class="card">1</div>
+      </div>
+
+      <h2>Grid layout</h2>
+      <div class="grid-layout">
+        <header><h1>HEADER</h1></header>
+
+        <div class="main">
+          <div>1</div>
+          <div class="col2">2</div>
+          <div>3</div>
+          <div>4</div>
+          <div class="col2">5</div>
+          <div>6</div>
+          <div>7</div>
+          <div class="col2">8</div>
+          <div>9</div>
         </div>
-        
-        <div class="cards">
-            <div class="card">1</div>
-            <div class="card">2</div>
-            <div class="card">3</div>
-        </div>
+        <aside>SIDEBAR</aside>
+        <footer>FOOTER</footer>
+      </div>
     </main>
-
-</body>
-
+  </body>
 </html>
