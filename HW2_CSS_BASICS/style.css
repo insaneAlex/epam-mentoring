@@ -1,0 +1,55 @@
+body {
+    box-sizing      : border-box;
+    margin          : 0;
+    padding         : 0;
+    background-color: gainsboro;    
+}
+
+main{
+    margin: 0 auto;
+}
+
+.wrapped-block{
+    flex-wrap: wrap;
+}
+
+.card-order{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.wrapped-block .card-order {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+   
+    border: 1px solid gray;
+}
+
+.cards {
+    display: flex;
+    padding: 30px;
+}
+
+.cards .card {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    height          : 50px;
+    border          : 1px solid red;
+    background-color: dodgerblue;
+    flex            : 1;
+}
+
+/*second*/
+
+.cards .card2 {
+    flex: 2;
+}
+
+
+.card:not(:last-child) {
+    margin-right: 10px;
+}
