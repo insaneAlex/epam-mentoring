@@ -3,12 +3,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: monospace;
+  background-color: #bfbfbf;
 }
 
 main {
   margin: 0 auto;
   max-width: 950px;
   background-color: gainsboro;
+  padding: 50px;
 }
 h1 {
   margin: 0;
@@ -52,12 +54,11 @@ h1 {
   margin-right: 10px;
 }
 
-/*second*/
-
 .layout2 {
   display: flex;
   margin-bottom: 15px;
 }
+
 .layout2 .card,
 .layout2 .card2 {
   line-height: 50px;
@@ -68,10 +69,10 @@ h1 {
   border: 1px solid gray;
 }
 .layout2 .card {
-  width: 240px;
+  width: 200px;
 }
 .layout2 .card2 {
-  width: 120px;
+  width: 100px;
 }
 .layout2 .flex-start {
   justify-content: flex-start;
