@@ -6,8 +6,8 @@ body {
 }
 
 main {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0 auto;
+  max-width: 950px;
   background-color: gainsboro;
 }
 h1 {
@@ -96,15 +96,76 @@ h1 {
   justify-content: space-evenly;
 }
 
-.divTableRow {
+.layout3 {
+  padding: 0 20px;
   display: flex;
-  height: 500px;
   flex-wrap: wrap;
+  height: 600px;
   margin-bottom: 100px;
+  align-content: center;
 }
-.divTableCell {
+.layout3 .card {
   height: 50px;
   border: 1px solid saddlebrown;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: goldenrod;
+}
+.layout3 .card.card1 {
+  width: 150px;
+  height: 55px;
+}
+.layout3 .card.card2 {
+  width: 130px;
+  height: 35px;
+}
+.layout3 .card.card3 {
+  width: 220px;
+  height: 55px;
+}
+.layout3 .card.card4 {
+  width: 240px;
+  height: 50px;
+}
+.layout3 .card.card5 {
+  width: 270px;
+  height: 35px;
+}
+.layout3 .card.card6 {
+  width: 230px;
+  height: 30px;
+}
+.layout3 .card.card7 {
+  width: 120px;
+  height: 30px;
+}
+.layout3 .card.card8 {
+  width: 130px;
+  height: 50px;
+}
+.layout3 .card.card9 {
+  width: 120px;
+  height: 22px;
+}
+.layout3 .card.card10 {
+  width: 140px;
+  height: 30px;
+}
+.layout3 .card.card11 {
+  width: 130px;
+  height: 70px;
+}
+.layout3 .card.card12 {
+  width: 100px;
+  height: 50px;
+}
+
+.layout3 .card {
+  height: 50px;
+  border: 1px solid saddlebrown;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
 }
 
 /* GRID */
@@ -120,7 +181,7 @@ h1 {
   grid-row-start: 1;
   grid-row-end: 2;
 
-  background-color: #f2b068;
+  background-color: #b7d968;
 }
 
 .grid-layout .main {
@@ -166,9 +227,9 @@ h1 {
   grid-template-rows: 50% 50%;
 }
 .grid-layout .item {
-  text-align: center;
-  padding: 35px;
   color: gainsboro;
+  text-align: center;
+  padding-top: 35px;
 }
 .grid-layout .item-a {
   grid-column-start: 1;
