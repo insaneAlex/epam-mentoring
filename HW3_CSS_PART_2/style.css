@@ -1,0 +1,68 @@
+body {
+    font-family: monospace;
+    box-sizing : border-box;
+    padding    : 0 30px;
+}
+
+.part1 p:first-of-type::first-line {
+    color: red;
+}
+
+h1::after,
+h1::before {
+    content : 'text';
+    position: absolute;
+}
+
+h1::before {
+    left: 40px;
+}
+
+h1::after {
+    left: 200px;
+}
+
+h1 {
+    margin-left: 80px;
+}
+
+h1::first-letter {
+    color: red;
+}
+
+h1::selection {
+    color           : wheat;
+    background-color: black;
+}
+
+p::selection,
+div::selection {
+    color           : wheat;
+    background-color: black;
+}
+
+.part2 div {
+    height          : 150px;
+    width           : 200px;
+    background-color: yellow;
+    margin-bottom   : 20px;
+    padding         : 50px;
+    text-align      : center;
+    font-size       : 30px;
+}
+
+.part2 div:first-child:hover {
+    background-color: yellowgreen;
+}
+
+.part2 div:nth-child(2):active {
+    background-color: yellowgreen;
+}
+
+.part2 div:nth-child(2):clicked {
+    background-color: yellowgreen;
+}
+
+.part2 a:visited {
+    color: red;
+}
