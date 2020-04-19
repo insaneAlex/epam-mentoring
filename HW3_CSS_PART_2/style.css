@@ -13,11 +13,11 @@ body section {
 }
 h1::selection {
   color: wheat;
-  background-color: black;
 }
 p::selection,
-div::selection {
-  background-color: black;
+div::selection,
+h1::selection {
+  background-color: gainsboro;
 }
 
 .part1 p:first-of-type::first-line {
@@ -35,7 +35,7 @@ div::selection {
 }
 
 .part1 h1::after {
-  left: 200px;
+  left: 175px;
 }
 
 .part1 h1 {
@@ -79,7 +79,7 @@ div::selection {
   align-content: center;
 }
 .animations .example1 {
-  background-color: greenyellow;
+  background-color: yellow;
   border-radius: 100%;
   width: 250px;
   height: 250px;
@@ -98,7 +98,7 @@ div::selection {
 }
 
 .animations .example2 {
-  animation: example2 4s infinite;
+  animation: example2 5s ease-in-out infinite;
   background-color: yellow;
   position: fixed;
   width: 150px;
@@ -121,8 +121,9 @@ div::selection {
 }
 
 @keyframes example2 {
-  0% {
-    background-color: #ecd078;
+  0%,
+  100% {
+    background-color: greenyellow;
     left: 0;
     top: 0;
   }
@@ -140,8 +141,6 @@ div::selection {
     background-color: silver;
     left: 1000px;
     top: 0;
-  }
-  100% {
   }
 }
 
